@@ -1,3 +1,4 @@
+// Word counter for CSV files/content
 package csv
 
 import (

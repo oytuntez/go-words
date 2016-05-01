@@ -1,3 +1,4 @@
+// Word counter for TXT files/content (or simply plain text content)
 package txt
 
 import (
