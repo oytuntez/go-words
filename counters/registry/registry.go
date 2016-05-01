@@ -14,7 +14,6 @@ var defaultCounter = "base"
 
 // Add a new counter to the registry.
 func Add(name string, counter interfaces.CounterInterface) bool {
-	fmt.Printf("Adding new counter: %v\n", name)
 	counters[name] = counter
 
 	return true
