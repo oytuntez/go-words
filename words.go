@@ -1,34 +1,11 @@
-package main
+package words
 
 import (
 	"path/filepath"
 	_ "github.com/oytuntez/go-words/counters/all"
 	"github.com/oytuntez/go-words/counters/interface"
 	"github.com/oytuntez/go-words/counters/registry"
-	"bufio"
-	"os"
-	"fmt"
-	"strings"
 )
-
-// Allows compiling the package and running from terminal
-func main() {
-	run()
-}
-
-// Runs the package by getting input from terminal
-// User provides file path to count the words
-func run() {
-	reader := bufio.NewReader(os.Stdin)
-	fmt.Print("Enter file path: ")
-	path, _ := reader.ReadString('\n')
-	path = strings.TrimSpace(path)
-
-	words := Words{}
-	wordCount := words.File(path)
-
-	println(wordCount)
-}
 
 // Package struct. Provides File and Text methods.
 type Words struct {}
