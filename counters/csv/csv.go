@@ -1,4 +1,5 @@
 // Word counter for CSV files/content
+// (TODO) CSV counter is not implemented yet.
 package csv
 
 import (
